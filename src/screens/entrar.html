@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Health</title>
+    <link rel="stylesheet" href="../assets/css/entrar.css">
+    <script src="../assets/script/script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="icon" src="../assets/img/logo.png" alt="Logo MyHealth">
+        <p class="logo">MyHealth</p>
+    </header>
+    <div  class="containerLogin">
+        <div class="email"> 
+            <label for="email">E-mail: </label>
+            <input type="email" name="email"  class="box" id = "emailEntrar">
+        </div>
+        <div class="senha">
+            <label for="senha">Senha:  </label>
+            <input type="password" name="senha" class="box" id = "senhaEntrar"> 
+        </div>
+        <div class="alerta" id = "erroLogin">
+            E-mail e/ou senha inválidos.
+        </div>
+        <div>
+            <button onclick="login()" type="button" class="entrar" >Entrar</button>
+        </div>
+        <div>
+            <button onclick="esqueciSenha()" type="button" class="recpsenha"> Recuperar senha</button>
+        </div>    
+            
+    </div>
+    
+</body>
+
+</html>

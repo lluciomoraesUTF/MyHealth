@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Health</title>
+    <link rel="stylesheet" href="../assets/css/criarConta.css">
+    <script src = "../assets/script/script.js"></script>"
+</head>
+<body>
+    <header>
+        <img class="icon" src="../assets/img/logo.png" alt="Logo MyHealth">
+        <p class="logo">MyHealth</p>
+    </header>
+        <div class="conteinerCriarConta"> 
+            <div class="nome">
+                <label for="nome" class="label_nome">Nome completo: </label>
+                <input type="name" name="nome" class="box">
+            </div>
+            <div class = "sexo">
+                <label for="sexo" class="label_sexo" >Sexo: </label>
+                <input type="radio" class="check" name="sexo" value="masculino"> Masculino
+                <input type="radio" class ="check" name="sexo" value="feminino"> Feminino
+            </div>
+            <div class="data">
+                <label for="data" class = "label_data">Data de nascimento: </label>
+                <input type="date" name="data" class="box">
+            </div>
+            <div class="email"> 
+                <label for="email" class="label_email">E-mail: </label>
+                <input type="email" name="email" class="box">
+            </div>
+            <div class="senha">
+                <label for="senha" class="label_senha">Senha:  </label>
+                <input type="password" name="senha" class="box" id = "senha_cad"> 
+            </div>
+            <div class="repetirSenha">
+                <label for="repetirSenha" class="label_rep">
+                    Repetir Senha:  </label>
+                <input type="password" name="repetirSenha" class="box" id = "senha_confirm">
+            </div>
+            <div class="senhaNaoConfere" id = "erroSenha">
+                Senha não confere!
+            </div> 
+            <div>
+                <button  onclick="cadastrar()" type = "button" class="cadastro" >Cadastrar</button>
+            </div>
+        </div>
+
+</body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Health</title>
+    <link rel="stylesheet" href="../assets/css/novaVacina.css">
+    <script src="../assets/script/script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="icon" src="../assets/img/logo.png" alt="Logo MyHealth">
+        <p class="logo">MyHealth</p>
+        <button class="myVaccines" onclick="navHome()">Minhas Vacinas</button>
+        <button class="loggout">Logout</button>
+    </header>
+    <div class="containerNovaVac">
+        <div class="dataVac">
+            <label for ="datavac"> data de Vacinação </label>
+            <input type = 'date' class="box">
+        </div>
+        <div class="vacina">
+            <label for ="vacina"> Vacina </label>
+            <input type = 'text' class="box">
+        </div>
+        <div class="dose"> 
+            <label for ="dose"> Dose </label>
+            <input type="radio" class="check" name="" value="1dose"> 1º Dose
+            <input type="radio" class ="check" name="2º Dose" value="2dose"> 2º Dose
+            <input type="radio" class ="check" name="3º Dose" value="3dose"> 3º Dose
+            <input type="radio" class ="check" name="reforco" value="reforco"> Reforço
+            <input type="radio" class ="check" name="Dose unica" value="doseUnica"> Dose Unica
+        </div>
+        <div class="compVacina">
+            <label for ="compVacina"> Comprovante de Vacina </label>
+            <input type = 'file' class="selectImage">
+        </div>
+        <div class="dataProxVac">
+            <label for ="dataProxVac"> Próxima Vacinação </label>
+            <input type = 'date' class="box">
+        </div>
+        <div class="buttom">
+            <button class="cadastrar">Cadastrar</button>
+        </div>
+        
+   
+     </div>
+</body>
