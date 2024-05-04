@@ -1,5 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"; 
+import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+import { getCollection } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"; 
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyDGob2QeOZqQNkGvE4EUauCZ0Da4HERK9Q",
@@ -12,9 +14,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-function navLogin(){
-  window.location.href = "../screens/entrar.html";
-}
+const collection = getCollection(app)
 
 function navCriarconta(){
   window.location.href = "../screens/criarConta.html";
@@ -30,9 +30,6 @@ function verifSenhaIgual(){
        document.getElementById("erroSenha").style.display = 'block';
      }, 20000)
    }
- }
- function navHome(){
-   window.location.href = "../screens/home.html";
  }
  function exibirImage(){
   document.getElementById("selectImage").addEventListener('change', function() {
@@ -106,6 +103,26 @@ function loggout(){
   }).catch((error) => {
     console.log(error);
   });
+}
+onAuthStateChange(user => {
+  if (user) {
+    procurarVacinas(user);
+  } else {
+    window.location.href = "../screens/entrar.html";
+  }
+})
+function procurarVacinas(user) {
+  const collection = getCollection(app);
+  collection('vacinas')
+  .get()
+  .where ('user_uid', user.uid)
+  .orderBy('date', 'desc')
+  .then(dados => {
+    const vacinas = dados.docs.map(doc => doc.data());
+    console.log(vacinas);
+    addVacinas(vacinas);
+    
+  })
 
 }
 

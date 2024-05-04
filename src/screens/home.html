@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Health</title>
     <link rel="stylesheet" href="../assets/css/home.css">
-    <script type =" module" src="../assets/script/script.js"></script>
+    <script type =" module" src="../assets/script/home.js"></script>
 </head>
 <body>
     <header>
         <img class="icon" src="../assets/img/logo.png" alt="Logo MyHealth">
         <p class="logo">MyHealth</p>
-        <button class="myVaccines" onclick="navHome()">Minhas Vacinas</button>
-        <button class="loggout" onclick="loggout()">Logout</button>
+        <button class="myVaccines" id ="myVac">Minhas Vacinas</button>
+        <button class="loggout" id ="sair">Logout</button>
     </header>
     <div class= "row">
         <input type="text" class="pesquisa" value="Pesquisa">     
     </div>
     <div  class= "row">
-        <button onclick="navHome()" class= "cadastVac">Nova Vacina</button>
+        <button onclick="navCadVac()" class= "cadastVac" id="cadVac">Nova Vacina</button>
     </div>
     </div>
 </body>
