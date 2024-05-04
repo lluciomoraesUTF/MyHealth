@@ -50,8 +50,8 @@ header {
     width: 704px;
     font-size: 36px;
     align-items: center;
-    
 }
+
 .label_nome{
     display: absolute;
     padding: 10px;
@@ -85,21 +85,25 @@ header {
     height: 51px;
 }
 .box{
-    box-sizing: border-box;
+    display: inline;
     border: 1px solid #000;
     font-size: 36px;
     color: #3F92C5;
-    align-items: center;
+    justify-content: end;   
 }
 .check {
-    font-size: 36px;
-    
-    padding: 5px 10px;
+    width: 27px;
+    height: 27px;
+    appearance: none;
+    border-radius: 50%;
+    border: 3px solid #FFF; 
+    background-color: #FFF;
+
 }
 .check:checked{
-    background-color: #fff;
-    color: #3F92C5;
+    background-color: #419ED7;
 }
+
 .repetirSenha{
     flex-direction:row;
     width: 698px;
@@ -130,5 +134,10 @@ header {
     padding: 10px;
     display: none;
 }
-
+.linha{
+    display: inline;
+    align-items: center;
+    text-align: right;
+    
+}
 

@@ -10,7 +10,7 @@ body{
 header {
     display: flex;
     box-sizing: border-box;
-    margin: 0;
+    margin: none;
     background-color: #C1E7E3; 
     width: auto;
     height: 87px;
@@ -67,6 +67,18 @@ header {
     border: 1px solid #000;
     font-size: 36px;
     color: #3F92C5;
+}
+.check {
+    width: 27px;
+    height: 27px;
+    appearance: none;
+    border-radius: 50%;
+    border: 3px solid #FFF; 
+    background-color: #FFF;
+
+}
+.check:checked{
+    background-color: #419ED7;
 }   
 .dose{
     display: inline-block;
@@ -77,8 +89,14 @@ header {
     text-align: center;
     align-items: center;
 }
+.label_selectImage{
+    text-align: center;
+    line-height: 49px;
+
+}
 .selectImage{
-    background-color: #419ED7;
+    display: none;
+    color: #419ED7;
 }
 button{
     border-color: #419ED7;
@@ -114,4 +132,7 @@ button{
     padding: 10px;
     box-shadow: 0px 4px 4px 0px #00000040;
     border-color: #37BD6D;
+}
+.linha{
+    display: inline;
 }

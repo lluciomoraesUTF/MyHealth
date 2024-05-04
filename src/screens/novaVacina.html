@@ -16,15 +16,23 @@
     </header>
     <div class="containerNovaVac">
         <div class="dataVac">
-            <label for ="datavac"> data de Vacinação </label>
-            <input type = 'date' class="box">
+            <div class="linha">
+                <label for ="datavac"> Data de Vacinação: </label>
+            </div>
+            <div class="linha">
+                <input type = 'date' class="box">
+            </div>
         </div>
         <div class="vacina">
-            <label for ="vacina"> Vacina </label>
-            <input type = 'text' class="box">
+            <div class="linha">
+                <label for ="vacina"> Vacina: </label>
+            </div>
+            <div class="linha">
+                <input type = 'text' class="box">
+            </div>
         </div>
         <div class="dose"> 
-            <label for ="dose"> Dose </label>
+            <label for ="dose"> Dose: </label>
             <input type="radio" class="check" name="" value="1dose"> 1º Dose
             <input type="radio" class ="check" name="2º Dose" value="2dose"> 2º Dose
             <input type="radio" class ="check" name="3º Dose" value="3dose"> 3º Dose
@@ -32,12 +40,20 @@
             <input type="radio" class ="check" name="Dose unica" value="doseUnica"> Dose Unica
         </div>
         <div class="compVacina">
-            <label for ="compVacina"> Comprovante de Vacina </label>
-            <input type = 'file' class="selectImage">
+            <div class="linha">
+                <label for="selectImage" class="label_selectImage" style="width: 299px; height: 47px;">Selecionar Imagem</label>
+            </div>
+            <div class="linha" id ="selecionarImag">
+                <input type="file" id="selectImage" accept="image/*">
+            </div>
         </div>
         <div class="dataProxVac">
-            <label for ="dataProxVac"> Próxima Vacinação </label>
-            <input type = 'date' class="box">
+            <div class="linha">
+                <label for ="dataProxVac"> Próxima Vacinação </label>
+            </div>
+            <div class="linha">
+                <input type = 'date' class="box">
+            </div>
         </div>
         <div class="buttom">
             <button class="cadastrar">Cadastrar</button>
