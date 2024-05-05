@@ -1,8 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 import { getCollection } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"; 
-
-
 const firebaseConfig = {
   apiKey: "AIzaSyDGob2QeOZqQNkGvE4EUauCZ0Da4HERK9Q",
   authDomain: "myhealth-luciomoraes.firebaseapp.com",
@@ -11,11 +9,8 @@ const firebaseConfig = {
   messagingSenderId: "487149132923",
   appId: "1:487149132923:web:3d23cf99329538bd25d6de"
 };
-
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const collection = getCollection(app)
-
+const auth = getAuth(app)
 function navCriarconta(){
   window.location.href = "../screens/criarConta.html";
 }
