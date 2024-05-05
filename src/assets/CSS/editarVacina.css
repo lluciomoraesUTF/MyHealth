@@ -49,6 +49,75 @@ header {
     font-size: 45px;
 
 }
+.button-excluir{
+    position: relative;
+    top: 5px;
+    width: 133px;
+    right: -485px;
+    background-color:#FD7979;
+    font-size: 30px;
+    font-family: 'Averia Libre';
+}
+.modal{
+    color:#FD7979;
+    border:none;
+    font-family: 'Averia Libre';
+    width: 698px;
+    height: 317px;
+    font-size: 36px;
+}
+.texto-modal{
+    width: 601px;
+    height: 36px;
+    gap: 0px;
+    color:#FF8383;
+    opacity: 0px;
+    font-family: Averia Libre;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.8px;
+    text-align: center;
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+.linha-modal{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}   
+.button-aceitar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#FD7979;
+    font-family: 'Averia Libre';
+    height: 71px;
+    width: 216px;
+    padding: 30px;
+    margin:20px;
+    font-size: 36px;
+    box-shadow: 0px 4px 4px 0px #00000040;  
+}
+.button-nao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#419ED7;
+    font-family: 'Averia Libre';
+    height: 71px;
+    width: 216px;
+    padding: 30px;
+    margin:20px;
+    font-size: 36px;;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+dialog::backdrop{
+    background-color: rgb(0,0,0,0.5);
+}
 .dataVac{
     padding: 10px;
 }
@@ -138,9 +207,9 @@ button{
     font-family: 'Averia Libre';
     margin-left: auto;
 }
-.cadastrar{
+.salvar-alt{
     position: relative;
-    width: 188px;
+    width: auto;
     height: 50px;
     background-color: #37BD6D;
     font-size: 24px;

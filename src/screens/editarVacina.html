@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Health</title>
-    <link rel="stylesheet" href="../assets/css/novaVacina.css">
-    <script type="module" src="../assets/script/novaVacina.js"></script>
+    <link rel="stylesheet" href="../assets/css/editarVacina.css">
+    <script type="module" src="../assets/script/editarVacina.js"></script>
 </head>
 <body>
     <header>
         <img class="icon" src="../assets/img/logo.png" alt="Logo MyHealth">
         <p class="logo">MyHealth</p>
-        <button class="myVaccines" onclick="navHome()">Minhas Vacinas</button>
+        <button class="myVaccines" >Minhas Vacinas</button>
         <button class="loggout">Logout</button>
     </header>
     <div class="containerNovaVac">
+        <div class= "excluir">
+            <button class="button-excluir" id="excluir" >Excluir</button>
+            </button>
+        </div>
+        
         <div class="dataVac">
             <div class="linha">
                 <label for ="datavac"> Data de Vacinação: </label>
@@ -63,9 +68,21 @@
             </div>
         </div>
         <div class="buttom">
-            <button class="cadastrar">Cadastrar</button>
+            <button class="salvar-alt">Salvar Alterações</button>
         </div>
-        
-   
      </div>
+     <dialog class ="modal" id ="modal">
+        <div class ="coluna">
+            <div class="linha-modal">
+                <p class="texto-modal"> Tem certeza que deseja remover essa vacina?</p> 
+            </div>
+            <div class="linha-modal">
+                <div >
+                    <button id="sim" class="button-aceitar">Sim</button>
+                </div>
+                <div>
+                    <button id="nao" class="button-nao">Não</button>
+                </div>  
+            </div> 
+        </dialog>
 </body>

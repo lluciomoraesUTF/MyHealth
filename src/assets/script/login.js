@@ -12,9 +12,10 @@ const firebaseConfig = {
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   document.getElementById("entrar").addEventListener("click", login);
+  document.getElementById("esqSenha").addEventListener("click", navRedefinirSenha);
 
   function login() {
-    addEventListener 
+   
     const email = document.getElementById('emailEntrar').value;
     const senha = document.getElementById('senhaEntrar').value;
     signInWithEmailAndPassword(auth, email, senha)
@@ -28,3 +29,6 @@ const firebaseConfig = {
       }, 20000)
     });
   }  
+  function navRedefinirSenha() {
+    window.location.href = "../screens/recuperarSenha.html";
+  }
